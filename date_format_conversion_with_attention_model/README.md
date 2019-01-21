@@ -1,6 +1,6 @@
 # Neural Machine Translation with Attention in Keras.
 
-## Here seq2seq model is create with attention mechanism which can translate the human readable dates (8 march 2018) to standard date format (2018-03-08).
+### Here seq2seq model is created with attention mechanism which can translate the human readable dates (8 march 2018) to standard date format (2018-03-08).
 
 ## What is seq2seq model.
  * seq2seq model takes sequence as input (source) and gives seq as output (target) (where input and output seq can be of different lengths).
@@ -9,7 +9,7 @@
    2. Decoder: Takes the output of Encoder model (feature vector) and generate target seq.
 
 ## In date translation example encoder-decoder model looks like this.
-     ![enc_dec](images/encode_decode.jpg?raw=true "enc_dec")
+   ![enc_dec](images/encode_decode.jpg?raw=true "enc_dec")
 
 ## Encoder-Decoder Network with attention mechanism.
  * We do not read whole text in one go and then do the translation.
@@ -17,7 +17,7 @@
  * This step is acheved by attention mechanism.
 
 ## In date translation example encoder-decoder model with attention mechanism looks like this.
-     ![enc_dec_attention](images/encode_decode_attention.jpg?raw=true "enc_dec_attention")
+   ![enc_dec_attention](images/encode_decode_attention.jpg?raw=true "enc_dec_attention")
 
 ## Full Model overview:
  * In encoder network Bidirectional LSTM is used, It will take characters as input sequence and output the feature vector.
